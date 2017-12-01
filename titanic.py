@@ -237,3 +237,5 @@ input_fn = tf.estimator.inputs.pandas_input_fn({'PassengerId': x_train['Passenge
 input_fn = tf.estimator.inputs.pandas_input_fn(X, y_train, batch_size = 4, num_epochs=None, shuffle=True)
 input_fn = tf.estimator.inputs.pandas_input_fn(train, train['Survived'], batch_size = 4, num_epochs=None, shuffle=True)
 estimator.train(input_fn=input_fn, steps=1000)
+
+print("test")
